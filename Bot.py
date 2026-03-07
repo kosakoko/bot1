@@ -223,7 +223,7 @@ async def start_command(message: types.Message):
         "📥 Просто отправь мне ссылку на видео из TikTok, Instagram или YouTube, "
         "и я скачаю его для тебя!\n\n"
         "⚡️ Видео кешируются для быстрой загрузки при повторных запросах.\n\n"
-        "🔒 **Улучшенная защита**: бот использует современные методы обхода блокировок "
+        "🔒 Улучшенная защита: бот использует современные методы обхода блокировок "
         "(имитация браузера, правильные заголовки, обход гео-блокировок)\n\n"
         "Выбери действие:",
         reply_markup=keyboard
@@ -237,18 +237,18 @@ async def process_callback(callback_query: types.CallbackQuery):
     if callback_query.data == "info_tiktok":
         await bot.send_message(
             callback_query.from_user.id,
-            "📱 **TikTok**\n\n"
+            "📱 TikTok\n\n"
             "Поддерживаемые форматы ссылок:\n"
             "• https://www.tiktok.com/@user/video/123456789\n"
             "• https://vt.tiktok.com/ZS123456/\n\n"
-            "⚙️ **Особенности**: бот имитирует браузер Chrome для обхода защиты TikTok.\n\n"
+            "⚙️ Особенности: бот имитирует браузер Chrome для обхода защиты TikTok.\n\n"
             "Просто отправьте ссылку и получите видео!"
         )
     
     elif callback_query.data == "info_instagram":
         await bot.send_message(
             callback_query.from_user.id,
-            "📷 **Instagram**\n\n"
+            "📷 Instagram\n\n"
             "Поддерживаемые форматы ссылок:\n"
             "• https://www.instagram.com/p/ABC123/\n"
             "• https://www.instagram.com/reel/ABC123/\n"
@@ -261,12 +261,12 @@ async def process_callback(callback_query: types.CallbackQuery):
     elif callback_query.data == "info_youtube":
         await bot.send_message(
             callback_query.from_user.id,
-            "▶️ **YouTube**\n\n"
+            "▶️ YouTube\n\n"
             "Поддерживаемые форматы ссылок:\n"
             "• https://www.youtube.com/watch?v=ABC123\n"
             "• https://youtu.be/ABC123\n"
             "• https://www.youtube.com/shorts/ABC123\n\n"
-            "⚙️ **Особенности**:\n"
+            "⚙️ Особенности*:\n"
             "• Используются разные типы плееров (Android, Web) для обхода n-sig защиты\n"
             "• Имитация Chrome на Windows 10\n"
             "• Попытка обхода гео-блокировок\n\n"
@@ -276,17 +276,17 @@ async def process_callback(callback_query: types.CallbackQuery):
     elif callback_query.data == "help":
         await bot.send_message(
             callback_query.from_user.id,
-            "❓ **Помощь**\n\n"
+            "❓ Помощь\n\n"
             "Как пользоваться ботом:\n"
             "1️⃣ Отправьте ссылку на видео\n"
             "2️⃣ Подождите несколько секунд\n"
             "3️⃣ Получите видео в чат\n\n"
-            "⚠️ **Важно:**\n"
+            "⚠️ Важно:\n"
             "• Видео из YouTube могут загружаться дольше\n"
             "• При повторной отправке той же ссылки видео загрузится мгновенно из кеша\n"
             "• Кеш автоматически очищается каждый час\n"
             "• Если видео не загружается, попробуйте еще раз — бот использует несколько методов обхода\n\n"
-            "По всем вопросам: @your_support"
+            "По всем вопросам: @kosakoko"
         )
     
     elif callback_query.data == "clean_cache":
