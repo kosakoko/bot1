@@ -1,5 +1,11 @@
-aiogram==2.25.1
+aiogram>=2.25,<3.0
 yt-dlp
 aiofiles
+aiohttp>=3.9.0
+multidict>=6.0.4
+yarl>=1.9.0
+frozenlist>=1.4.0
+
+
 
 
