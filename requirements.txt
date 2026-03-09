@@ -1,9 +1,9 @@
 aiogram==2.21
-aiohttp==3.8.6
 yt-dlp==2024.8.6
 python-dotenv==1.0.1
 mutagen==1.47.0
 requests==2.32.3
+
 
 
 
