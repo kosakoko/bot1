@@ -1,7 +1,8 @@
-aiogram==2.25.1
+aiogram==2.21
 yt-dlp
 python-dotenv
 aiofiles
+
 
 
 
